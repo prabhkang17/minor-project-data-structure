@@ -1,0 +1,43 @@
+This project demonstrates a basic implementation of the Round Robin CPU Scheduling Algorithm in C. It's a simple and clean example to help understand how process scheduling works in operating systems using queues and time quantums.
+📌 Description
+Round Robin Scheduling is one of the most commonly used CPU scheduling algorithms. In this algorithm:
+
+Each process is assigned a fixed time quantum.
+
+If a process's burst time is more than the quantum, it is put at the end of the queue after being served for that time.
+
+If the process completes in less than or equal to the quantum, it is terminated.
+
+This project uses a linked list-based queue to simulate this behavior with process structures.
+
+🧱 Key Features
+Struct-based representation of Processes and the Queue.
+
+Dynamic creation of processes with burst time.
+
+Linked list implementation for the process queue.
+
+Core logic for Round Robin Scheduling.
+
+Clear and formatted console output for execution tracking.
+
+🛠 How It Works
+Processes are created with a unique ID and a burst time.
+
+All processes are added to a queue.
+
+The CPU serves each process in the queue for a set time quantum.
+
+If a process isn't finished, it is requeued with updated remaining time.
+
+If it's completed, the process is freed.
+
+The scheduling continues until all processes are completed
+
+
+
+
+
+
+
+
